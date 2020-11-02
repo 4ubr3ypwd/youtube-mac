@@ -1,6 +1,6 @@
 {
   "name": "youtube",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "An (unofficial) native MacOS App for Youtube.",
   "main": "index.js",
   "scripts": {
