@@ -18,7 +18,7 @@ brew cask install youtube
 
 ### Upgrade
 
-```
+```bash
 brew update
 brew upgrade youtube
 ```
