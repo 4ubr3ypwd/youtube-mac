@@ -27,9 +27,7 @@ brew upgrade youtube
 
 Or download the `.dmg` in [releases](https://github.com/aubreypwd/youtube-mac/releases/latest) and install per usual.
 
-*_Note, you will have to Right-click on the YouTube to open for the first time._*
-
----
+*_Note, you will have to Right-click on the YouTube app to run for the first time, even after upgrading._*
 
 # Development
 

@@ -8,7 +8,7 @@
     "installsupport": "echo 'Run: [brew install graphicsmagick imagemagick] for additional DMG support.'",
     "postinstall": "npm run installsupport",
     "build": "npm run nativefier",
-    "nativefier": "./node_modules/.bin/nativefier --name 'Youtube' --platform 'Mac' --flash --verbose --darwin-dark-mode-support --icon ./icon.png --user-agent 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:70.0) Gecko/20100101 Firefox/70.0' --internal-urls '(.*?account\\.google\\.com.*?|.*?accounts\\.google\\.com.*?)' 'https://youtube.com/' ./build",
+    "nativefier": "./node_modules/.bin/nativefier --name 'Youtube' --platform 'Mac' --flash --verbose --darwin-dark-mode-support --icon ./icon.png --user-agent 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:70.0) Gecko/20100101 Firefox/70.0' --internal-urls '(.*?account\\.google\\.com.*?|.*?accounts\\.google\\.com.*?|.*?youtube\\.com.*?)' 'https://youtube.com/' ./build",
     "dist": "npm run build && mkdir -p dist/ && ./node_modules/.bin/create-dmg './build/Youtube-darwin-x64/Youtube.app' --overwrite --dmg-title='Youtube' --identity='Aubrey Portwood' ./dist/ || true && mv './dist/Youtube 1.0.0.dmg' \"./dist/Youtube $npm_package_version.dmg\""
   },
   "author": "Aubrey Portwood",
